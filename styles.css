@@ -63,12 +63,23 @@ nav ul li a {
 .projects ul li {
     margin: 0.5em 0;
 }
+/* General image styling */
 img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto; /* Centers the image */
 }
+
+/* Container for the project images */
+.project-image-container {
+    max-width: 80%; /* Set this to the desired max width */
+    margin: 0 auto; /* Center the container */
+    overflow: hidden; /* Prevent overflow */
+    text-align: center; /* Center-align content inside the container */
+}
+
+/* Optional styling for images inside the projects */
 .projects img {
     border: 2px solid #ddd; /* Optional: Add a border to the images */
     border-radius: 5px; /* Optional: Rounded corners */
@@ -76,6 +87,7 @@ img {
     margin-top: 10px; /* Space above the image */
     margin-bottom: 20px; /* Space below the image */
 }
+
 .social-links a {
     margin: 0 1em;
     text-decoration: none;
