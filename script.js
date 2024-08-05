@@ -1,12 +1,17 @@
 function filterProjects(category) {
-    let projects = document.getElementsByClassName('project-item');
-    for (let i = 0; i < projects.length; i++) {
+    var projects = document.getElementsByClassName('project-item');
+    for (var i = 0; i < projects.length; i++) {
         if (category === 'all') {
-            projects[i].style.display = 'block';
-        } else if (projects[i].classList.contains(category)) {
-            projects[i].style.display = 'block';
+            projects[i].classList.add('show');
         } else {
-            projects[i].style.display = 'none';
+            if (projects[i].getAttribute('data-category') === category) {
+                projects[i].classList.add('show');
+            } else {
+                projects[i].classList.remove('show');
+            }
         }
     }
 }
+
+// Show all projects by default
+filterProjects('all');
