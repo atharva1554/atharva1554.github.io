@@ -1,3 +1,5 @@
+/* Add these styles or update existing ones */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -29,54 +31,49 @@ nav ul li a {
     text-decoration: none;
 }
 
-.projects {
+.intro, .about, .projects, .contact {
     text-align: center;
     padding: 2em 0;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     margin: 2em auto;
-    width: 90%;
+    width: 80%;
 }
 
-.project-filters {
-    margin-bottom: 1em;
+.intro img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    animation: fadeIn 2s ease-in-out;
 }
 
-.project-filters button {
-    padding: 10px 20px;
-    margin: 0 5px;
-    border: none;
-    border-radius: 5px;
-    background-color: #444;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.intro h1, .about h2, .projects h2, .contact h2 {
+    margin-top: 0.5em;
+    animation: fadeIn 3s ease-in-out;
 }
 
-.project-filters button:hover {
-    background-color: #666;
+.intro p, .about p, .projects p, .contact p {
+    animation: fadeIn 4s ease-in-out;
 }
 
-.project-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.projects ul {
+    list-style: none;
+    padding: 0;
 }
 
-.project-item {
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
-    margin: 1em;
-    padding: 1em;
-    width: 45%;
-    box-sizing: border-box;
+.projects ul li {
+    display: inline-block;
+    margin: 10px;
+    vertical-align: top;
+    width: calc(50% - 20px);
 }
 
-.project-item img {
+.projects ul li img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
 }
 
@@ -85,9 +82,9 @@ footer {
     color: white;
     text-align: center;
     padding: 1em 0;
-    position: relative;
-    bottom: 0;
+    position: fixed;
     width: 100%;
+    bottom: 0;
 }
 
 @keyframes fadeIn {
