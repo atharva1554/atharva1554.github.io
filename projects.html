@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Atharva Khairnar</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <header>
@@ -20,36 +21,43 @@
     <main>
         <section class="projects">
             <h1>Projects</h1>
+            <div class="project-filters">
+                <button onclick="filterProjects('all')">All</button>
+                <button onclick="filterProjects('ml')">Machine Learning</button>
+                <button onclick="filterProjects('dl')">Deep Learning</button>
+                <button onclick="filterProjects('web')">Web Development</button>
+                <button onclick="filterProjects('data')">Data Analysis</button>
+            </div>
             <div class="project-grid">
-                <div class="project-item">
+                <div class="project-item" data-category="ml">
                     <a href="https://github.com/atharva1554/Anomaly-Detection" target="_blank">
                         <img src="Anomaly.png" alt="Anomaly Prediction">
                         <h2>Anomaly Prediction using ML</h2>
                     </a>
                     <p>Developed a model to predict anomalies using various machine learning algorithms. Detailed analysis and feature engineering were performed to improve accuracy.</p>
                 </div>
-                <div class="project-item">
+                <div class="project-item" data-category="ml">
                     <a href="https://github.com/atharva1554/Bitcoin_price_prediction" target="_blank">
                         <img src="Bitcoin.png" alt="Bitcoin Price Prediction">
                         <h2>Bitcoin Price Prediction using ML</h2>
                     </a>
                     <p>Created a predictive model for Bitcoin Price and conducted a comparative study using different datasets and techniques.</p>
                 </div>
-                <div class="project-item">
+                <div class="project-item" data-category="web">
                     <a href="https://github.com/atharva1554/car-price-prediction" target="_blank">
                         <img src="Car.png" alt="Car Price Prediction">
                         <h2>Car Price Prediction Website</h2>
                     </a>
                     <p>Developed a web application to predict car prices based on user inputs.</p>
                 </div>
-                <div class="project-item">
+                <div class="project-item" data-category="web">
                     <a href="https://github.com/atharva1554/Crop-Recommendation" target="_blank">
                         <img src="Crop.png" alt="Farmer Assistance">
                         <h2>Farmer Assistance Website</h2>
                     </a>
                     <p>Created a website to assist farmers with fertilizer and crop selection based on soil conditions.</p>
                 </div>
-                <div class="project-item">
+                <div class="project-item" data-category="ml">
                     <a href="https://github.com/atharva1554/Loan-Approval-Prediction" target="_blank">
                         <img src="Loan.png" alt="Loan Approval Prediction">
                         <h2>Loan Approval Prediction</h2>
