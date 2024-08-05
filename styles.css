@@ -35,33 +35,49 @@ nav ul li a {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     margin: 2em auto;
-    width: 80%;
+    width: 90%;
 }
 
-.projects ul {
-    list-style: none;
-    padding: 0;
+.project-filters {
+    margin-bottom: 1em;
 }
 
-.projects ul li {
-    margin: 2em 0;
-    padding: 1em;
+.project-filters button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.project-filters button:hover {
+    background-color: #666;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-item {
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
+    margin: 1em;
+    padding: 1em;
+    width: 45%;
+    box-sizing: border-box;
 }
 
-.project-image-container {
-    max-width: 90%;
-    margin: 0 auto;
-    overflow: hidden;
-    text-align: center;
-}
-
-.project-image-container img {
+.project-item img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
 }
 
 footer {
