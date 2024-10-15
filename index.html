@@ -1,31 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Atharva Khairnar</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Atharva Khairnar's Portfolio - Data Scientist and AI/ML Researcher.">
+  <title>Atharva Khairnar | Data Scientist</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="intro">
-            <img src="a.jpg" alt="Atharva Khairnar">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Hello, I'm Atharva Khairnar, a Computer Engineering student at PCCOE&R. I specialize in machine learning, data science, and web development. Explore my projects and feel free to reach out if you'd like to collaborate!</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Atharva Khairnar. All rights reserved.</p>
-    </footer>
+  <!-- Navbar -->
+  <nav>
+    <div class="container">
+      <h1><a href="#home">Atharva Khairnar</a></h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h2>Hi, I'm Atharva Khairnar</h2>
+        <p>Data Scientist | AI & ML Researcher | 4th-Year Computer Engineering Student</p>
+        <a href="#projects" class="btn-primary">View My Projects</a>
+        <a href="#contact" class="btn-secondary">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I’m a 4th-year Computer Engineering student with a deep passion for data science, machine learning, and artificial intelligence. 
+        I focus on building efficient and scalable machine learning models, with a special interest in healthcare research. My key skills include 
+        Python, TensorFlow, and data visualization.
+      </p>
+      <p>
+        I’ve worked on several research projects, including lung and breast cancer detection using machine learning. In addition to my academic 
+        achievements, I’ve contributed to open-source projects and participated in numerous data science competitions.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>📊 Bitcoin Price Prediction</h3>
+        <p>Machine learning model predicting Bitcoin prices with data preprocessing and feature selection techniques.</p>
+        <a href="https://github.com/atharva1554/Bitcoin_price_prediction" class="btn-secondary">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>🌾 Crop Recommendation System</h3>
+        <p>A recommendation system that suggests crops based on soil conditions using ML algorithms.</p>
+        <a href="https://github.com/atharva1554/Crop-Recommendation" class="btn-secondary">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>🧠 Lung Cancer Detection</h3>
+        <p>Machine learning project focused on lung cancer detection using AI models.</p>
+        <a href="https://github.com/atharva1554/Lung-Cancer-Detection-Using-ML-Algorithms" class="btn-secondary">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form action="mailto:atharvakhairnar1554@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Atharva Khairnar. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://github.com/atharva1554" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/atharva1554" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.kaggle.com/khairnaratharva" target="_blank"><i class="fab fa-kaggle"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
